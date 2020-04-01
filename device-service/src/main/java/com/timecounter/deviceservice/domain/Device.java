@@ -1,5 +1,6 @@
 package com.timecounter.deviceservice.domain;
 
+import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -10,6 +11,7 @@ import java.util.Set;
 
 @Data
 @NoArgsConstructor
+@AllArgsConstructor
 @Builder
 @Document(collection = "device")
 public class Device {

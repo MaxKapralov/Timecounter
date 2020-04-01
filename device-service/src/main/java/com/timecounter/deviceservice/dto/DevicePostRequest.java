@@ -5,15 +5,13 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.util.Set;
-
 @Data
+@Builder
 @NoArgsConstructor
 @AllArgsConstructor
-@Builder
-public class DeviceDTO {
-    private String id;
+public class DevicePostRequest {
+    private Long userId;
+    private Integer numberOfSides;
     private boolean isBatteryLow;
     private boolean isActive;
-    private Set<DeviceSideDTO> sides;
 }

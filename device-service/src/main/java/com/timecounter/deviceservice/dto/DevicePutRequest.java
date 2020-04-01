@@ -8,10 +8,10 @@ import lombok.NoArgsConstructor;
 import java.util.Set;
 
 @Data
-@NoArgsConstructor
-@AllArgsConstructor
 @Builder
-public class DeviceDTO {
+@AllArgsConstructor
+@NoArgsConstructor
+public class DevicePutRequest {
     private String id;
     private boolean isBatteryLow;
     private boolean isActive;
